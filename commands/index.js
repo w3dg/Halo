@@ -1,5 +1,6 @@
 const ping = require("./ping");
 const help = require("./help");
+const pizza = require("./pizza");
 
 const prefix = `$`;
 const guildID = "720175341217513524";
@@ -7,6 +8,7 @@ const channelID = "775249679017443348";
 const commands = {
   ping,
   help,
+  pizza,
 };
 
 module.exports = async (msg) => {
@@ -18,6 +20,6 @@ module.exports = async (msg) => {
   const args = msg.content.split(" ");
   const command = args.shift().substring(prefix.length);
   if (command in commands) {
-    commands[command](msg);
+    commands[command](msg, args);
   }
 };
