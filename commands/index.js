@@ -1,6 +1,8 @@
 const ping = require("./ping");
 const help = require("./help");
 const pizza = require("./pizza");
+const eightBall = require("./eightball");
+const fortune = require("./fortune");
 
 const prefix = `$`;
 const guildID = "720175341217513524";
@@ -9,6 +11,8 @@ const commands = {
   ping,
   help,
   pizza,
+  "8ball": eightBall,
+  fortune,
 };
 
 module.exports = async (msg) => {

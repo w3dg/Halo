@@ -1,4 +1,8 @@
 module.exports = async (msg, args) => {
+  if (args.length == 0)
+    return await msg.reply(
+      "Cannot order if pizza names are not given! Please provide name/s of pizza you want to order"
+    );
   const pizzaOrders = [
     `Gathering customer ( ${msg.author} ) details...`,
     `Pizza name:  ${args.join(" ")}`,
