@@ -18,6 +18,6 @@ module.exports = async (msg, args) => {
   while (c <= pizzaOrders.length) {
     msg.reply(pizzaOrders[c - 1]);
     c++;
-    await new Promise((r) => setTimeout(r, 2000)); // helps to pause execution
+    await new Promise((r) => setTimeout(r, 2000)); // helps to wait for 2 sec
   }
 };
