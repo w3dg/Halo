@@ -17,7 +17,7 @@ module.exports = async (msg, args) => {
 
   const MemeEmbed = new MessageEmbed()
     .setTitle("Meme")
-    .setColor("#ff9966")
+    .setColor("#f0ba5d")
     .addField("Title", memeTitle, true)
     .setImage(memeUrl);
 

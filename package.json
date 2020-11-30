@@ -1,5 +1,5 @@
 {
-  "name": "Halo",
+  "name": "halo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,9 @@
   "dependencies": {
     "discord.js": "^12.4.1",
     "dotenv": "^8.2.0",
+    "figlet": "^1.5.0",
     "fortune-tweetable": "^1.0.0",
+    "glob": "^7.1.6",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.6"
   }

@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const { Client } = require("discord.js");
-const commandHandler = require("./commands");
+const commandHandler = require("./cmdHandler");
 const client = new Client();
 
 client.once("ready", () => {
