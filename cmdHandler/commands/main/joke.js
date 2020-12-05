@@ -4,7 +4,7 @@ module.exports = async (msg) => {
   const data = await fetch(
     "https://official-joke-api.appspot.com/jokes/random"
   );
-  const json = await res.json();
+  const json = await data.json();
   await msg.channel.send(json.setup);
   await msg.channel.send(json.punchline);
 };
