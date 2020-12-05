@@ -1,10 +1,11 @@
 module.exports = async (msg, args) => {
   if (!msg.member.hasPermission("BAN_MEMBERS")) {
-    return await msg.reply(
+    return msg.reply(
       "You have no permission to do so! Don't go beyond your limits!"
     );
   }
 
+  if (args.length === 0) return msg.reply("Mention a user to unban!");
   const targetID = args[0].substring(3, args[0].length - 1);
 
   try {
