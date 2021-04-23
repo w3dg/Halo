@@ -44,6 +44,11 @@ function createHelpEmbed() {
         value: "Converts text given after the command as ASCII art.",
       },
       {
+        name: "$avatar",
+        value:
+          "Get the avatar image of your user or someone else by mentioning them.",
+      },
+      {
         name: "$userinfo",
         value:
           "Get some user info about yourself or someone by mentioning them.",
